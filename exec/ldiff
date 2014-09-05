@@ -13,6 +13,7 @@ if [[ "${MERGED##*.}" == tex ]]; then
     fi
 
     latexdiff "$LOCAL" "$REMOTE" > "$output"
+    pdflatex $output
     echo "Generated $output"
 else
     echo "Skipped $MERGED (non tex)."
