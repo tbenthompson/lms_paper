@@ -25,7 +25,7 @@ These results suggest that the Longmen Shan is an active fold-and-thrust belt wi
 The Longmen Shan range is located on the eastern margin of the Tibetan and rises 4000m over 30km (CHECK THESE NUMBERS ON GOOGLE EARTH).
 The 2008 $\mathrm{M_w}$ 7.9 Wenchuan earthquake ruptured 250km along strike on the Beichuan and Pengguan faults, resulting in approximately XXXXX fatalities (CITE STONE)
 Prior geodetic estimates suggest almost zero horizontal shortening (Chen 2000, Shen 2005, Meade 2007, Loveless and Meade 2011), in contrast with the dominant thrust slip-sense during the Wenchuan rupture. 
-Others authors reconcile the lack of shortening with the steep topography by appealing a lower crustal inflation tectonic model for the eastern Tibetan Plateau (CITE clark, royden, burchfiel, kirby, etc).
+Other authors reconcile the lack of shortening with the steep topography by appealing a lower crustal inflation tectonic model for the eastern Tibetan Plateau (CITE clark, royden, burchfiel, kirby, etc).
 However, the magnitude and location of the Wenchuan earthquake suggest a more typical fold-and-thrust belt. 
 Using seismic reflection data, Hubbard and Shaw 2009 find a well-developed fold-and-thrust fault system geometry with long-term shortenings up to 100\%. 
 A growing body of literature supports this interpretation, 
@@ -34,24 +34,49 @@ This fold-and-thrust structure may extend deep into the plateau as evidenced by 
 CITE THE PAPERS EXAMINING THE LONGRIBA FAULT THAT PROPOSE A DETACHMENT
 
 However, it remains to be explained how slow present-day geodetic shortening estimates can be reconciled with the Wenchuan earthquake and the large structurally-observed shortening.
-Prior estimates can be categorized into those that neglect earthquake cycle effects, analyzing the fault slip-deficit without no explicit model of the geometry or tectonics, (CHEN, SHEN) and those that use block models, which normally assume a simplified fault geometry. 
+Prior estimates can be categorized into those that neglect earthquake cycle effects, analyzing the fault slip-deficit without no explicit model of the geometry or tectonics, (CHEN, SHEN) and those that use block models, which normally assume a simplified fault geometry (CITE MEADE 2007, BURCHFIEL 2008, LOVELESS AND MEADE 2011).
+Loveless and Meade report the highest shortening rate of 3.2 mm/yr.
 Here, we present a model that includes earthquake cycle effects to explain the regional geodetic velocities as the result of a complex interseismically locked fault geometry, including a 20km deep detachment and the range-front thrust Beichuan fault.
-This geometry is consistent with structural interpretations and with the geometry of Qi et. al 2012 and Fielding et. al 2013. 
-Using this range-front thrust plus detachment geometry, we infer an average horizontal shortening between the TIbetan Plateau.
+This geometry is consistent with structural interpretations and with the geometry of Qi et al 2012 and Fielding et al 2013. 
+Using this range-front thrust plus detachment geometry, we infer an average horizontal shortening between the TIbetan Plateau using interseismic GPS data collected prior to the Wenchuan earthquake.
 Next, we show how this geometry can drives the steep velocity gradients far to the northwest of the range front, thus explaining the absence of a range-front interseismic velocity gradient.
 Finally, we discuss the effects of Longmen Shan fault geometry on regional seismic hazard and tectonics.
 
-Maybe insert this information? --- Using InSAR measurements and post-Wenchuan GPS observations, Qi et. al. 2011 found evidence of 2-6m of slip on a 20km deep detachment that extends 60km northwest underneath the Tibetan Plateau. 
+Maybe insert this information? --- Using InSAR measurements and post-Wenchuan GPS observations, Qi et al. 2011 found evidence of 2-6m of slip on a 20km deep detachment that extends 60km northwest underneath the Tibetan Plateau. 
 
 \section{Geodetic analysis of Longmen Shan shortening}
-Geodetic shortening across the Longmen Shan
-Show figure with the location of the profile, location of the GPS stations, beichuan fault trace, DEM background.
-GPS observations from Apel, Banerjee, Calais, Gan, Vigny, assembled into a single reference frame by Loveless and Meade.
-All observations were made prior to the Wenchuan earthquake.
-Although sparse, improvements in interseismic GPS resolution will not be available for a long time (many decades?) due to overprinting postseismic signals from Wenchuan.
 
-The debate over shortening in the Longmen Shan has centered around the clear lack of velocity gradient at the range front.
-Chen et. al. 2000 < 3mm/yr of shortening in the Longmen Shan.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=7in]{figs/lms_map_with_faults.pdf}
+    \caption{A map of the Longmen Shan region with the basemap showing shaded relief. The focal mechanism plot is located at the epicenter of the Wenchuan earthquake, while the thicker red line shows the surface trace of rupture. The thin red lines show 1km depth contours of our model geometry. GPS velocity vectors are colored black if they are not included in our parameter estimation and red if they are included. The blue line shows the two-dimensional cross-section we study. Thin black lines indicate other significant faults in the region.}
+    \label{fig:regional_map}
+\end{figure}
+
+Our fault geometry is derived from a Community Fault Model for the Longmen Shan and Sichuan Basin region being actively developed (Plesch and Shaw, personal communication).
+This geometry is derived from structural interpretation of both seismic reflection surverys and surface geology (Hubbard \& Shaw).
+We make no modifications to the geometry except to take a fault-perpindicular cross-section.
+The cross-section and geometry with depth contours are shown in Figure \ref{fig:regional_map}.
+
+Because our model includes a deep detachment, we must include interseismic GPS data deep into the interior of the Tibetan Plateau.
+We study GPS observations collected prior to the Wenchuan earthquake by (CITES Apel, Banerjee, Calais, Gan, Vigny), assembled into a single reference frame by Loveless and Meade 2011.
+These velocities are shown in Figure \ref{fig:regional_map} along with the site of the Wenchuan earthquake and other regional faults.
+We include in our estimation velocities that are within the potential far-field influence of a deep detachment under the easternmost Tibetan Plateau and the Longmen Shan.
+We exclude velocities that are near major faults like the Xianshuihe fault or the Kunlun fault. 
+Later, we demonstrate that our results are reasonably robust to the specific data set that is studied.
+Addition of more recent observations could bias our results due to possible postseismic transient deformation.
+
+
+
+To analyze these data, we use a new quasistatic elastic boundary element code.
+An important feature of our code is the inclusion of accurate surface topography in steep mountain ranges or Earth curvature in large-scale problems.
+In addition, we can accurately reproduce half-space solutions to very high precision. 
+The steep topography of the Longmen Shan range front is included via the SRTM-30 dataset (CITE SANDWELL).
+
+As demonstrated by the leveling-off of the model predicted velocities, velocities deeper into the plateau are likely controlled by other fault systems.
+
+The debate over shortening in the Longmen Shan has centered around the clear lack of velocity gradient at the range front. 
+Chen et al. 2000 < 3mm/yr of shortening in the Longmen Shan.
 However, all their stations are within 50km of the range front. CHECK THIS
 Reference the plot of GPS velocities in the figure which shows the best fitting solution.
 General theme of previous interpretations: either ignored earthquake cycle effects or only looked at the near-field GPS.
@@ -61,16 +86,10 @@ Interseismic locking leads to a smooth profile of geodetic velocities across a l
 Interpreting this profile is highly dependent on fault geometry.
 In the Longmen Shan, a deep detachment leads to a surface velocity gradient that is localized very far to the west of the range front.
 However, ignoring the detachment would indicate minimal shortening across the range front (see figures).
-We developed a 2D boundary element model.
-We assume isotropic elasticity.
-How much is worth saying about the BEM code?
-The standard seems to be almost nothing...
-I'm uncomfortable with that.
-Should I link to a copy of the code used?
 
 Our fault geometry is based on a community fault model of the Longmen Shan fault system (in development, shaw, plesch) that is based on seismic reflection imagery.
 Although not directly observed, based on structural considerations, they include the deep detachment.
-The location of this detachment is approximately the same as the Qi et. al. 2011 detachment. We use the SRTM30\_Plus global DEM(becker, sandwell et. al.)  to provide a representative, smoothed, topographic profile across the range. 
+The location of this detachment is approximately the same as the Qi et al. 2011 detachment. We use the SRTM30\_Plus global DEM(becker, sandwell et al.)  to provide a representative, smoothed, topographic profile across the range. 
 I need to talk to John Shaw to get reasonable elastic moduli for the region.
 For topography, GPS, and fault geometry, we project the data onto the vertical plane of the cross section line (this should just go in a figure).
 We fit the GPS velocities with a constant shortening rate on the whole Beichuan + detachment. The best fit is ~8 mm/yr (+-!!). 
@@ -85,7 +104,7 @@ Longriba fault zone?
 I need to calculate recurrence intervals and look up previous estimates for comparison. 
 Assuming 5m of slip in the Wenchuan earthquake, a 45 degree dipping fault, and 8mm of shortening: 8*sqrt(2) mm/yr slip deficit -> 5000/8*sqrt(2) = 441 years.
 Assuming that all 8 mm/yr of slip-deficit is concentrated on a single 45 degree dipping fault with the same surface area as the Wenchuan earthquake rupture, we calculate a recurrence interval of 450 years.
-However, this recurrence interval ignores the presence of other Longmen Shan faults and should be considered as an upper bound. The Beichuan and Pengguan faults are only two members of an imbricated thrust sequence. Interpretations of seismic reflection data (hubbard et. al) find multiple other thrusts including a detachment called the Range Front Thrust that extends 50km into the Sichuan Basin. This detachment lies directly under Chengdu, a city of 14 million. The slip-deficit distribution amongst these faults is unknown. Accounting for the subhorizontal Range Front Thrust, which has a large surface area, might seriously reduce our recurrence interval.
+However, this recurrence interval ignores the presence of other Longmen Shan faults and should be considered as an upper bound. The Beichuan and Pengguan faults are only two members of an imbricated thrust sequence. Interpretations of seismic reflection data (hubbard et al) find multiple other thrusts including a detachment called the Range Front Thrust that extends 50km into the Sichuan Basin. This detachment lies directly under Chengdu, a city of 14 million. The slip-deficit distribution amongst these faults is unknown. Accounting for the subhorizontal Range Front Thrust, which has a large surface area, might seriously reduce our recurrence interval.
 
 150kms west of the Beichuan, there are 3 GPS stations with similar profile location. But, the velocities are significantly different. This indicates some lateral heterogeneity in the orogeny.
 
@@ -105,6 +124,9 @@ These first three deficiencies could be remedied through a more geometrically re
 Finally, the shortening rate estimate may be low due to being estimated late in the earthquake cycle (GOOD CITATION FOR THE GENERAL CONCEPT?). 
 
 On the other hand, there are reasons to believe that the strain energy budget in the Longmen Shan region is not entirely released in major earthquakes. Critical-taper wedge theory results in very low friction coefficients for the shallowly dipping detachment in the foreland and the deep detachment (Hubbard,Shaw, Klinger + deep detachment here). Hence, these fault segments are more likely to release significant energy aseismically. Analogously, it has been suggested that the Himalayan range front consumes most of its energy budget aseismically (CITE!!!).
+
+It is also important that the recurrence interval calculation assumed that the entire range-front was ruptured by the Wenchuan earthquake.
+However, the southern portion of the Longmen Shan did not rupture during the earthquake. 
 
 \section{Conclusions}
 Previous interseismic shortening estimates suggested almost no shortening. This is at odds with the Mw 7.9 Wenchuan earthquake. We clarify this conflict by including earthquake cycle effects and a 20km deep detachment. Our revised interseismic shortening rate is ().
