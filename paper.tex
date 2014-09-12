@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage[margin=1.0in]{geometry}
 \usepackage[nomarkers,figuresonly]{endfloat}
+\usepackage{setspace}
+\doublespacing
 
 \begin{document}
 
@@ -19,7 +21,7 @@ The Longmen Shan is the steepest topographic front of the India-Asia collision a
 \section{Introduction}
 The Longmen Shan range is located on the eastern margin of the Tibetan and rises 4000m over 30km (CHECK THESE NUMBERS ON GOOGLE EARTH).  The 2008 $\mathrm{M_w}$ 7.9 Wenchuan earthquake ruptured 250km along strike on the Beichuan and Pengguan faults, resulting in approximately XXXXX fatalities (CITE STONE) Prior geodetic estimates suggest almost zero horizontal shortening (Chen 2000, Shen 2005, Meade 2007, Loveless and Meade 2011), in contrast with the dominant thrust slip-sense during the Wenchuan rupture.  Other authors reconcile the lack of shortening with the steep topography by appealing a lower crustal inflation tectonic model for the eastern Tibetan Plateau (CITE clark, royden, burchfiel, kirby, etc).  However, the magnitude and location of the Wenchuan earthquake suggest a more typical fold-and-thrust belt.  Using seismic reflection data, Hubbard and Shaw 2009 find a well-developed fold-and-thrust fault system geometry with long-term shortenings up to 100\%.  A growing body of literature supports this interpretation, Fielding and McKenzie 2012 interpret satellite gravity-field data to infer that mass of the Longmen Shan is supported by a flexed Sichuan Basin.  This fold-and-thrust structure may extend deep into the plateau as evidenced by seismic tomography and coseismic slip inversions (CITE ZHANG, QI, FIELDING). CITE THE PAPERS EXAMINING THE LONGRIBA FAULT THAT PROPOSE A DETACHMENT
 
-However, it remains to be explained how slow present-day geodetic shortening estimates can be reconciled with the Wenchuan earthquake and the large structurally-observed shortening. Prior estimates can be categorized into those that neglect earthquake cycle effects, analyzing the fault slip-deficit without no explicit model of the geometry or tectonics, (CHEN, SHEN) and those that use block models, which normally assume a simplified fault geometry (CITE MEADE 2007, BURCHFIEL 2008, LOVELESS AND MEADE 2011). Loveless and Meade report the highest shortening rate of 3.2 mm/yr.  Here, we present a model that includes earthquake cycle effects to explain the regional geodetic velocities as the result of a complex interseismically locked fault geometry, including a 20km deep detachment and the range-front thrust Beichuan fault.  This geometry is consistent with structural interpretations and with the geometry of Qi et al 2012 and Fielding et al 2013.  Using this range-front thrust plus detachment geometry, we infer an average horizontal shortening between the TIbetan Plateau using interseismic GPS data collected prior to the Wenchuan earthquake.  Next, we show how this geometry can drive the steep velocity gradients far to the northwest of the range front, thus explaining the absence of a range-front interseismic velocity gradient. Importantly, this model provides increased estimates of seismic hazard. This model proposes that strain accumulates deep in the interior of the Tibetan plateau while being released at the Longmen Shan range front, thus providing a unified theory of the Longmen Shan earthquake cycle. 
+However, it remains to be explained how slow present-day geodetic shortening estimates can be reconciled with the Wenchuan earthquake and the large structurally-observed shortening. Prior estimates can be categorized into those that neglect earthquake cycle effects, analyzing the fault slip-deficit without no explicit model of the geometry or tectonics, (CHEN, SHEN) and those that use block models, which normally assume a simplified fault geometry (CITE MEADE 2007, BURCHFIEL 2008, LOVELESS AND MEADE 2011). Loveless and Meade report the highest shortening rate of 3.2 mm/yr.  Here, we present a model that includes earthquake cycle effects to explain the regional geodetic velocities as the result of a complex interseismically locked fault geometry, including a 20km deep detachment and the range-front thrust Beichuan fault.  This geometry is consistent with structural interpretations and with the geometry of Qi et al 2012 and Fielding et al 2013.  Using this range-front thrust plus detachment geometry, we infer an average horizontal shortening between the TIbetan Plateau using interseismic GPS data collected prior to the Wenchuan earthquake.  Next, we show how this geometry can drive the steep velocity gradients far to the northwest of the range front, thus explaining the absence of a range-front interseismic velocity gradient. Importantly, this model provides increased estimates of seismic hazard. This model proposes that strain accumulates up to 300km from the margin of the Tibetan plateau while being released at the Longmen Shan range front, thus providing a unified theory of the Longmen Shan earthquake cycle. 
 
 Maybe insert this information? --- Using InSAR measurements and post-Wenchuan GPS observations, Qi et al. 2011 found evidence of 2-6m of slip on a 20km deep detachment that extends 60km northwest underneath the Tibetan Plateau. 
 
@@ -27,7 +29,7 @@ Maybe insert this information? --- Using InSAR measurements and post-Wenchuan GP
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=7in]{figs/lms_map_with_faults.pdf}
+    \includegraphics[width=7in]{figs/lms_map_all.pdf}
     \caption{A map of the Longmen Shan region with the basemap showing shaded relief. The focal mechanism plot is located at the epicenter of the Wenchuan earthquake, while the thicker red line shows the surface trace of rupture. The thin red lines show 1km depth contours of our model geometry. GPS velocity vectors are colored black if they are not included in our parameter estimation and red if they are included. The blue line shows the two-dimensional cross-section we study. Thin black lines indicate other significant faults in the region.}
     \label{fig:regional_map}
 \end{figure}
@@ -40,9 +42,9 @@ To analyze these data, we use new quasistatic elastic boundary element software.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\linewidth]{vels_geom_interior.pdf}
-    \caption{Vels_geom_interior}
-    \label{fig:vels_geom_interior}
+    \includegraphics[width=0.8\linewidth]{figs/stack_figure_all_details.pdf}
+    \caption{a) Observed profile-parallel horizontal observed velocities are shown in black with 68\% confidence errorbars. Model-predicted velocities are shown by the red line with the surrounding gray region showing a 68\% confidence interval. b) Model geometry with colors and width along the locked fault showing predicted slip-deficit rates. Because shortening is the horizontal component of slip-deficit, increasing dips near the surface lead to great slip-deficits. c) Predicted horizontal velocity as a function of depth. Note the steep velocity gradient and corresponding strain accumulation above the end of the detachment surface.}
+    \label{fig:big_stack}
 \end{figure}
 In 
 
